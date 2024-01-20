@@ -1,0 +1,18 @@
+.amarelo {
+  color: yellow;
+}
+
+.branco {
+  color: white;
+}
+
+.laranja {
+  color: orange;
+}
+
+#integration2 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,8 +1,16 @@
-export default function Title() {
-  return (
+export default function Title(props) {
+  //propriedades passadas para os componentes
+  //props é somente leitura
+  console.log(props);
+  return props.small ? ( // operador tenario
     <>
-      <h1>Title</h1>
-      <h2>subtitle</h2>
+      <p>{props.main}</p>
+      <p>{props.secondary}</p>
+    </>
+  ) : (
+    <>
+      <h1>{props.main}</h1>
+      <h2>{props.secondary}</h2>
     </>
   );
 }
