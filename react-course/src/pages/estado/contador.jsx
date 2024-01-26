@@ -1,7 +1,7 @@
-import ContadorDisplay from "@/components/ContadorDisplay";
+import NumeroDisplay from "@/components/NumeroDisplay";
 import { useState } from "react";
 
-export default function contador() {
+export default function Numero() {
   const [numero, setNumero] = useState(0);
 
   const incrementar = () => setNumero(numero + 1);
@@ -18,7 +18,7 @@ export default function contador() {
       }}
     >
       <h1>Contador</h1>
-      <ContadorDisplay numero={numero} />
+      <NumeroDisplay numero={numero} />
       <div>
         <button onClick={incrementar}>+</button>
         <button onClick={decrementar}>-</button>
